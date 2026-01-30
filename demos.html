@@ -255,11 +255,11 @@ footer.bg-gray-800 {
      <div class="bg-gradient-to-r from-blue-600 via-sky-400 to-blue-600 text-white p-8 rounded-t-3xl relative overflow-hidden">
       <div class="absolute inset-0 bg-black opacity-20"></div>
       <div class="relative flex items-center justify-between">
-       <h2 class="text-4xl font-bold flex items-center gap-3 drop-shadow-lg"><span class="text-5xl animate-pulse">??</span> <span class="bg-clip-text text-transparent bg-gradient-to-r from-white to-sky-200">Jogo da Forca</span></h2><button onclick="closeHangmanGame()" class="text-white hover:text-sky-200 text-4xl transition-all hover:rotate-90 transform duration-300">×</button>
+       <h2 class="text-4xl font-bold flex items-center gap-3 drop-shadow-lg"><span class="text-5xl animate-pulse">🎮</span> <span class="bg-clip-text text-transparent bg-gradient-to-r from-white to-sky-200">Jogo da Forca</span></h2><button onclick="closeHangmanGame()" class="text-white hover:text-sky-200 text-4xl transition-all hover:rotate-90 transform duration-300">×</button>
       </div>
      </div>
      <div class="p-8"><!-- Category Selection -->
-      <div id="hangmanCategorySelection" class="mb-6"><label class="block text-2xl font-bold text-white mb-4 text-center drop-shadow-lg">?? Escolha uma categoria:</label> <select id="hangmanCategorySelect" class="w-full px-6 py-4 rounded-xl border-4 border-blue-400 focus:border-sky-400 focus:outline-none text-xl bg-white text-gray-800 font-semibold shadow-xl hover:shadow-2xl transition-all"> <option value="">Selecione...</option> </select> <button onclick="startHangmanGame()" class="w-full mt-6 bg-gradient-to-r from-sky-400 via-blue-600 to-sky-400 hover:from-sky-500 hover:via-blue-700 hover:to-sky-500 text-white px-8 py-5 rounded-xl font-black text-2xl transition-all shadow-2xl hover:shadow-sky-500/50 hover:scale-105 transform duration-300 border-2 border-white"> ?? COMEÇAR JOGO </button>
+      <div id="hangmanCategorySelection" class="mb-6"><label class="block text-2xl font-bold text-white mb-4 text-center drop-shadow-lg">🎯 Escolha uma categoria:</label> <select id="hangmanCategorySelect" class="w-full px-6 py-4 rounded-xl border-4 border-blue-400 focus:border-sky-400 focus:outline-none text-xl bg-white text-gray-800 font-semibold shadow-xl hover:shadow-2xl transition-all"> <option value="">Selecione...</option> </select> <button onclick="startHangmanGame()" class="w-full mt-6 bg-gradient-to-r from-sky-400 via-blue-600 to-sky-400 hover:from-sky-500 hover:via-blue-700 hover:to-sky-500 text-white px-8 py-5 rounded-xl font-black text-2xl transition-all shadow-2xl hover:shadow-sky-500/50 hover:scale-105 transform duration-300 border-2 border-white"> 🚀 COMEÇAR JOGO </button>
       </div><!-- Game Area -->
       <div id="hangmanGameArea" class="hidden">
        <div class="text-center mb-8">
@@ -274,7 +274,7 @@ footer.bg-gray-800 {
        </div><!-- Errors Counter -->
        <div class="text-center mb-8">
         <div class="inline-block bg-gradient-to-r from-red-500 to-sky-400 px-8 py-4 rounded-2xl shadow-2xl border-2 border-white">
-         <p class="text-xl font-black text-white">?? ERROS: <span id="hangmanErrors" class="text-4xl font-black drop-shadow-lg">0</span><span class="text-2xl">/6</span></p>
+         <p class="text-xl font-black text-white">⚠️ ERROS: <span id="hangmanErrors" class="text-4xl font-black drop-shadow-lg">0</span><span class="text-2xl">/6</span></p>
         </div>
        </div><!-- Word Display -->
        <div id="hangmanWord" class="flex flex-wrap justify-center gap-3 mb-8 text-4xl font-black text-white drop-shadow-2xl"><!-- Letters will be inserted here -->
@@ -286,7 +286,7 @@ footer.bg-gray-800 {
         <div class="mb-8 bg-white/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-blue-400">
          <p class="text-xl text-blue-200 font-bold mb-2">A palavra era:</p>
          <p id="hangmanCorrectWord" class="text-4xl font-black text-white drop-shadow-lg"></p>
-        </div><button onclick="startHangmanGame()" class="bg-gradient-to-r from-green-500 via-emerald-500 to-green-500 hover:from-green-600 hover:via-emerald-600 hover:to-green-600 text-white px-6 py-3 rounded-xl font-bold text-sm transition-all shadow-xl hover:scale-105 transform duration-300 border-2 border-white"> ?? JOGAR NOVAMENTE </button>
+        </div><button onclick="startHangmanGame()" class="bg-gradient-to-r from-green-500 via-emerald-500 to-green-500 hover:from-green-600 hover:via-emerald-600 hover:to-green-600 text-white px-6 py-3 rounded-xl font-bold text-sm transition-all shadow-xl hover:scale-105 transform duration-300 border-2 border-white"> 🔄 JOGAR NOVAMENTE </button>
        </div><!-- Back to Category Selection Button -->
        <div class="mt-8 text-right"><button onclick="backToCategorySelection()" class="text-blue-300 hover:text-blue-100 font-bold text-sm transition-all flex items-center gap-2 ml-auto"> ?? Nova Categoria </button>
        </div>
@@ -2209,10 +2209,10 @@ function stopAllAudio() {
             const messageEl = document.getElementById('hangmanResultMessage');
             
             if (won) {
-                messageEl.innerHTML = '<span class="inline-block animate-bounce">??</span> <span class="text-green-400">PARABÉNS!</span> <span class="inline-block animate-bounce">??</span><br><span class="text-2xl text-white">Você Venceu!</span>';
+                messageEl.innerHTML = '<span class="inline-block animate-bounce">🎉</span> <span class="text-green-400">PARABÉNS!</span> <span class="inline-block animate-bounce">🏆</span><br><span class="text-2xl text-white">Você Venceu!</span>';
                 messageEl.className = 'text-4xl font-black mb-6 drop-shadow-2xl pulse-glow';
             } else {
-                messageEl.innerHTML = '<span class="inline-block animate-pulse">??</span> <span class="text-red-400">GAME OVER!</span> <span class="inline-block animate-pulse">??</span><br><span class="text-2xl text-white">Tente Novamente!</span>';
+                messageEl.innerHTML = '<span class="inline-block animate-pulse">💀</span> <span class="text-red-400">GAME OVER!</span> <span class="inline-block animate-pulse">😢</span><br><span class="text-2xl text-white">Tente Novamente!</span>';
                 messageEl.className = 'text-4xl font-black mb-6 drop-shadow-2xl';
             }
             
@@ -2322,4 +2322,5 @@ function navigateStory(direction) {
 
  </body>
 </html>
+
 
